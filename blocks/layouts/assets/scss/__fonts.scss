@@ -1,0 +1,30 @@
+@import url("https://use.typekit.net/rjf0jzz.css");
+
+@mixin font1 {
+  font-family: normalidad-compact, sans-serif !important;
+}
+@mixin font2 {
+  font-family: normalidad-extended, sans-serif !important;
+}
+
+
+// @font-face {
+//   font-family: 'Lato-Italic';
+//   src: url('Lato-Italic.eot');
+//   src: url('Lato-Italic.eot?#iefix') format('embedded-opentype'),
+//       url('Lato-Italic.woff2') format('woff2'),
+//       url('Lato-Italic.woff') format('woff'),
+//       url('Lato-Italic.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'LucidaGrande-Bold';
+//   src: url('../fonts/LucidaGrande-Bold.eot');
+//   src: url('../fonts/LucidaGrande-Bold.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/LucidaGrande-Bold.woff2') format('woff2'),
+//       url('../fonts/LucidaGrande-Bold.woff') format('woff'),
+//       url('../fonts/LucidaGrande-Bold.ttf') format('truetype');
+//   font-weight: bold;
+//   font-style: normal;
+// }

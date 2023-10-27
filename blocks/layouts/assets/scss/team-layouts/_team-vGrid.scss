@@ -1,0 +1,145 @@
+/*Team Grid big Square view (template: team - class="team-vGrid-square")*/
+.team-vGrid-square{
+  .single-member{
+    .featured-member-images{
+      background-color: $primary;
+      background-size: cover;
+      box-shadow: none; 
+      display: block;
+      margin-bottom: 30px;
+      overflow: hidden;
+      padding-bottom: 100%;
+      position: relative;
+      transition: all 0.4s ease;
+      z-index: 0;
+      img{
+        @include center(-50%,-50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;  
+        height: 100%;
+        object-fit: cover;
+      }
+      .hover-box{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        &::after{
+          content: "";
+          background: rgba(0,0,0,0.7);
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          transition: all 0.4s ease;
+          z-index: 1;
+        }
+        .bottom-info-member{
+          background: rgba(0,0,0,0.7);
+          bottom: 0;
+          color: #ffffff;
+          opacity: 1;
+          padding: 10px 15px;
+          position: absolute;
+          transition: all 0.4s ease;
+          width: 100%;
+          .name-member{
+            display: inline-block;
+            width: calc(100% - 35px);
+            h3{
+              color: #ffffff;
+              font-size: 18px;
+              line-height: 1.1em;
+              margin: 0 0 5px !important;
+              padding: 0 !important;
+            }
+            .position-member{
+              color: #ffffff;
+            }            
+          }
+          .fa-plus-circle{
+            font-size: 30px;
+            float: right;
+          }
+        }
+        .read-more-hover{
+          @include center(-50%, -50%);
+          color: white;
+          font-size: 26px;
+          font-weight: 300;
+          line-height: 1em;
+          opacity:0;
+          position: absolute;
+          text-decoration: none;
+          text-transform: none;
+          top: 50%; left: 50%;
+          z-index: 2;
+          width: 100%;
+          text-align: center;
+          .fa-plus-circle{
+            font-size: 40px;
+            vertical-align: sub;
+          }
+        }
+        .social-networks{
+          bottom: 15px;
+          left: 0;
+          margin: 0 auto;
+          opacity: 0;
+          position: absolute;
+          right: 0;
+          text-align: center;
+          transition: all 0.4s ease;
+          z-index: 2;
+          &:hover{
+            li, a{
+              color: #ffffff;
+            }
+          }
+        }
+        &:hover{
+          &::after, .read-more-hover, .social-networks{
+            opacity: 1;
+            color: inherit;
+            border-color: inherit;
+            cursor: pointer;
+          }          
+          .bottom-info-member{
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mediaqueries(991max) {
+  .team-vGrid-square{
+    .single-member{
+      &.col-lg-3, &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}
+@include mediaqueries(767max) {
+  
+}
+@include mediaqueries(576max) {
+  .team-vGrid-square{
+    .single-member{
+      &.col-lg-3, &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

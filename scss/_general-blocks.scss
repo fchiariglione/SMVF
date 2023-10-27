@@ -1,0 +1,178 @@
+
+.team-vGrid-square-sm .single-member .featured-member-images .hover-box .bottom-info-member .name-member h3{
+	font-weight: bold !important;
+}
+.team_panel .side-panel-fixed .right-side-panel .body-panel {
+	.position-member, .content-member{
+		padding: 10px 30px !important;
+	}
+}
+.team-vGrid-square-sm .single-member .featured-member-images .hover-box .bottom-info-member .name-member .position-member{
+	font-size: 15px !important;
+	line-height: 1.2 !important;
+	display: inline-block;
+}
+.team_panel .side-panel-fixed .right-side-panel .header-panel, 
+.team-vGrid-square-sm .single-member .featured-member-images, 
+.team_panel .side-panel-fixed .right-side-panel .body-panel .profile-picture{
+	background-color: $primary !important;
+}
+.team-vGrid-circle .single-member{
+	&.col-lg-6{
+		.featured-member-images .hover-box .bottom-info-member{
+			padding: 10px 22% 30px;
+		}
+	}
+	.featured-member-images{
+		background-color: $primary !important;
+		img{
+			height: 100% !important;
+		}
+		.hover-box{
+			.bottom-info-member .name-member h3{
+				font-size: 22px;
+			}
+			.read-more-hover , .link-read-more{
+				color: white !important;
+				border-bottom: none !important;
+				&:hover{
+					border-color: transparent !important;
+				}
+			}
+			.social-networks {
+				padding: 0 !important;
+				li{
+					display: inline-block !important;
+					padding: 0 !important;
+					a{
+						color: white !important;
+					}
+					&::before{
+						content: none !important;
+					}
+				} 
+			}
+		}
+	}
+}
+.popup_vcard .modal-content{
+	button.close, #popup_vcard .modal-content button.close{
+		background-color: $primary !important;
+	} 
+	.side-right{
+		.name-member h3{
+			color: $primary !important;
+		} 
+		.social-networks{
+			margin-top: 20px;
+			a{
+				margin-right: 10px;
+				i{
+					color: $primary !important;
+				}
+			}
+		}
+	}
+}
+
+.block-quote {
+	background-color: $primary-light;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	@media (max-width: 991px){
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&.not-bg-color{
+		p,strong,h1,h2,h3,h4,h5,span{
+			color: $neutral !important;
+		}
+	}
+	&.text-left{
+		text-align: left !important;
+		p,strong,h1,h2,h3,h4,h5,span{
+			text-align: left !important;
+			color: white;
+		}
+	}
+	&.text-center{
+		text-align: center !important;
+		p,strong,h1,h2,h3,h4,h5,span{
+			text-align: center !important;
+			color: white;
+		}
+	}
+	&.text-right{
+		text-align: right !important;
+		p,strong,h1,h2,h3,h4,h5,span{
+			text-align: right !important;
+			color: white;
+		}
+	}
+	p,strong,h1,h2,h3,h4,h5,span{
+		@include font1;
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.89;
+		color: white !important;
+		font-stretch: 600;
+		font-style: normal;
+		letter-spacing: normal;
+		text-align: center;
+	}
+}
+
+.wp-block-media-text .wp-block-media-text__content{
+	padding: 30px 8% 30px 8% !important;
+}
+
+@include mediaqueries(1200max) {
+	.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content,
+	.wp-block-media-text .wp-block-media-text__content{
+		padding: 30px !important;
+	}
+}
+@include mediaqueries(991max) {
+	.wp-block-image .alignright, .wp-block-image .alignleft{
+		float: none !important;
+		margin: 0 auto;
+	}
+	.wp-block-media-text{   
+		display: flex !important;
+		flex-direction: column;
+		margin-bottom: 20px;
+		.wp-block-media-text__media{
+			
+		}
+		.wp-block-media-text__content{
+			padding: 50px 0 0 !important;
+		}
+		&.has-media-on-the-right{
+
+		}
+	}
+} 
+@include mediaqueries(767max) {
+	.team_panel .side-panel-fixed .right-side-panel .body-panel .profile-picture {
+		height: 400px !important;
+	}
+	.wp-block-columns.has-2-columns{
+		.wp-block-column{
+			flex-basis: 100%;      
+			&:nth-child(2){
+				text-align: center;
+			}
+		}
+	}
+	.wp-block-column{
+		-ms-flex-preferred-size: 100% !important;
+		flex-basis: 100% !important;
+	}
+	.wp-block-media-text{
+		-ms-grid-columns: 100%;
+		grid-template-columns: 100%;
+		.wp-block-media-text__media{
+			
+		}
+	}
+}

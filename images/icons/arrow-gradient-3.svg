@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g fill="none" fill-rule="evenodd" class="symbols">
+    <g class="symbols__arrow-avance3">
+      <g class="symbols__arrow-avance3__group-6-copy-4">
+        <g class="symbols__arrow-avance3__group-6-copy-4__arrow-avance">
+          <circle cx="22" cy="22" r="22" fill="#5BC1A5" class="symbols__arrow-avance3__group-6-copy-4__arrow-avance__oval"/>
+          <polyline stroke="#FFF" stroke-width="3" points="18 16 26 22.5 18 29" class="symbols__arrow-avance3__group-6-copy-4__arrow-avance__path-3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

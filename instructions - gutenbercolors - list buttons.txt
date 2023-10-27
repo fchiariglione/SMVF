@@ -1,0 +1,26 @@
+
+"primary" => "#23418A"
+"primary-dark" => "#16254B"
+"primary-light" => "#AADFD9"
+"secondary" => "#E64F0F"
+"secondary-light" => "#FFA463"
+"tertiary" => "#508574"
+"white" => "#ffffff"
+"black" => "#000000"
+"grey" => "rgba(22, 37, 75, 0.05)"
+
+
+---------------------------------------------------------------
+
+Buttons List Select 
+
+
+btn-2: blue button
+btn-2 primary-dark: dark button
+btn-2 secondary: orange button
+btn-2 secondary-light: light orange button
+btn-2 tertiary: green button
+btn-video: Video Button
+
+---------------------------------------------------------------
+

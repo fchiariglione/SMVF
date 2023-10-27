@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="56" viewBox="0 0 57 56">
+  <g fill="none" fill-rule="evenodd" class="campaign-overview">
+    <g class="campaign-overview__group-6-copy" transform="translate(1)">
+      <circle cx="27.543" cy="28" r="28" fill="#7FD9C0" class="campaign-overview__group-6-copy__oval"/>
+      <polyline stroke="#FFF" stroke-width="3" points="23.543 20 33.543 28.5 23.543 37" class="campaign-overview__group-6-copy__path-3"/>
+    </g>
+  </g>
+</svg>

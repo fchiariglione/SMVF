@@ -1,0 +1,178 @@
+#button-play-popup{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include MavenPro;
+  background-color: transparent;
+  border: none;
+  bottom: 130px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.72px;
+  line-height: 1;
+  padding: 5px 0 5px 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.49);
+  text-transform: uppercase;
+  z-index: 10;
+  #playPopup{
+    content: "";
+    background-image: url('../images/icons/play.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;    
+    border-radius: 50%;
+    box-shadow: 0 2px 17px 0 rgba(255, 0, 70, 0.45);
+    margin: 0 0 0 20px;
+    //@include center(0,-50%);
+    //position: absolute;
+    //top: 50%; right: 0;
+    transition: all 0.4s ease;
+    width: 50px;height: 50px;
+  }  
+  &:hover, &:focus{
+    outline: none;
+  }
+}
+
+body.home, body.single-stories {
+  .modal-backdrop.show{
+    opacity: 0;
+  }
+}
+#effect_popup{
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  z-index: 1040;
+  bottom: -50px;
+  background-image: radial-gradient(#fd5d5d, #fd5d5d);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  &.active{
+    -webkit-transform: scale(200);
+    transform: scale(200);
+  }
+  &.zIndex1{
+    z-index: -1 !important;
+  }
+}
+
+div[id*="myVideoModal"]{ 
+  padding-right: 0 !important;
+  .modal-xl, .modal-lg{
+    margin: 0 auto !important;
+    max-width: 80vw;
+    //height: calc(100vh - 80px);
+    //width: 100%;
+    &:hover, &:focus, &.active{
+      .modal-content{
+        .modal-header{
+          .close{
+           top: 5%;
+          }
+        }
+      }
+    }
+  }
+  .modal-content{
+    //background: linear-gradient(123deg, rgba(2,134,145,1) 0%, rgba(77,210,191,1) 100%);
+    background-color: #000;
+    height: 80vh;
+    margin-top: 10vh;
+    .modal-header{
+      border-bottom: none;
+      padding: 0 !important;
+      .close{
+       // @include center(-50%, -50%);
+        background: rgba($color: #fff, $alpha: 0.8);
+        border-radius: 50%;
+        color: #000000;
+        float: none !important;
+        font-size: 50px;
+        font-weight: bold;
+        height: 50px;
+        margin: 0 auto!important;
+        opacity: 1;
+        padding: 0 !important;
+        position: absolute;
+        left: 0;
+        right: 0;
+        //right: 50%;
+        text-align: center;
+        top: -25%;
+        transition: all 0.4s ease;
+        width: 50px;
+        z-index: 99;
+        span{
+          line-height: 1;
+          display: block;
+          height: auto !important;
+          position: relative;
+          top: -6px;
+        }
+        &:hover, &:focus, &.active{
+          background: rgba($color: #fff, $alpha: 1);
+          box-shadow: 0px 0px 0px 4px  rgba($color: #fff, $alpha: 0.5);
+          opacity: 1;
+        }
+      }
+    }
+    .modal-body{
+      //min-height: 100vh;     
+    }
+    .modal-body{
+      padding: 0 !important;
+    }
+    .embed-responsive{
+      //width: 90vw;
+      //margin: 10vh auto;
+      //height: 80vh;
+      width: 100%;
+      margin: 0 auto;
+      height: 100%;
+      position: absolute;
+      //height: 100vh;
+    }
+    .modal-footer{
+      display: none;
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.2);
+    }
+  }  
+}
+
+@include mediaqueries(1200max) {
+  
+}
+@include mediaqueries(991max) {
+  div[id*="myVideoModal"] .modal-content .modal-header .close{
+    top: -10vh;
+  }
+} 
+@include mediaqueries(767max) {
+  div[id*="myVideoModal"] .modal-xl, div[id*="myVideoModal"] .modal-lg {
+    max-width: 95vw;
+  }
+  div[id*="myVideoModal"] .modal-xl, .modal-lg{
+    //height: calc(100vh - 80px);
+    &:hover, &:focus, &.active{
+      .modal-content{
+        .modal-header{
+          .close{
+            top: 10vh;
+          }
+        }
+      }
+    }
+  }
+}
+@include mediaqueries(480max) {
+  
+}

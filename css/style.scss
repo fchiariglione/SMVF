@@ -1,0 +1,88 @@
+@import "bootstrap.min.css";
+@import "../fontawesome/css/all.min.css";
+
+// GLOBAL
+@import "../scss/mixins";
+@import "../scss/media-queries";
+@import "../scss/colors";
+@import "../scss/fonts";
+@import "../scss/general-style"; //New Style Page
+@import "../scss/buttons";
+@import "../scss/footer";
+@import "../scss/header";
+@import "../scss/boxes-footer";
+@import "../scss/helpers";
+// @import "../scss/block-video";
+// @import "../scss/popup";
+
+
+// Home
+@import "../scss/home-page/general-home";
+@import "../scss/home-page/home-banner";
+@import "../scss/home-page/section-a";
+
+
+
+
+
+@import "../scss/interior-page/custom-element-block-block";
+@import "../scss/interior-page/custom-image-carousel-block";
+@import "../scss/interior-page/image-carousel-block-style-1";
+@import "../scss/interior-page/custom-text-image-2-block";
+@import "../scss/interior-page/custom-text-image-block";
+@import "../scss/interior-page/custom-image-list-block";
+@import "../scss/interior-page/custom-text-list-block";
+@import "../scss/interior-page/custom-text-only-block";
+@import "../scss/interior-page/custom-team-bios-block";
+@import "../scss/interior-page/custom-text-video-block";
+@import "../scss/interior-page/custom-directory-block";
+// @import "../scss/interior-page/custom-testimonials-block";
+@import "../scss/interior-page/custom-testimonials-block-2";
+// @import "../scss/interior-page/custom-text-collage-block";
+@import "../scss/interior-page/custom-poster-block";
+@import "../scss/interior-page/custom-fullwidth-header";
+@import "../scss/interior-page/custom-text-trailer-block";
+@import "../scss/interior-page/custom-fullwidth-video-block";
+@import "../scss/interior-page/subbanner-block";
+@import "../scss/interior-page/decision-block";
+@import "../scss/interior-page/line-spacer-block";
+@import "../scss/interior-page/custom-options-block";
+@import "../scss/interior-page/custom-modal-toggle";
+
+// @import "../scss/blocks-interior/general-blocks";
+// @import "../scss/blocks-interior/newsroom";
+// @import "../scss/blocks-interior/carousel-testimonials";
+// @import "../scss/blocks-interior/campaing";
+// @import "../scss/general-blocks";
+
+// @import "../scss/blocks-interior/text-media";
+// @import "../scss/blocks-interior/accordion-block";
+// @import "../scss/blocks-interior/media-outside";
+
+@import "../scss/accordion";
+// @import "../scss/accordion-block";
+@import "../scss/ajaxsearch-plugin";
+// @import "../scss/breadcrumbs";
+@import "../scss/form-ThemeMyLogin";
+@import "../scss/gTranslate";
+@import "../scss/gravityForm-default";
+// @import "../scss/gravityForm-sign-up";
+// @import "../scss/gravityForm-donate";
+@import "../scss/interior-banner";
+// @import "../scss/interior-comments";
+@import "../scss/interior-ctgry-blog";
+// @import "../scss/interior-ctgry-resources";
+@import "../scss/interior-pages";
+// @import "../scss/store";
+// @import "../scss/interior-section-ads";
+@import "../scss/page-404";
+@import "../scss/pagination";
+// @import "../scss/paid-membership-pro";
+@import "../scss/search-page";
+@import "../scss/single-blog";
+// @import "../scss/social-networks";
+@import "../scss/sponsors-views";
+@import "../scss/team-bios";
+@import "../scss/tribe-events_calendar"; //EVENTS PLUGON
+// @import "../scss/unite-gallery";
+

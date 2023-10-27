@@ -1,0 +1,76 @@
+.section-j{
+	padding: 48px 0;
+	background: $primary-light;
+	color: black;
+
+	h3{
+		font-size: 18px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.22;
+		letter-spacing: 1.35px;
+		margin-bottom: 19px;
+	}
+
+	.img-wrap{
+		border-radius: 0;
+	}
+
+	blockquote{
+		position: relative;
+		&::before{
+			content: '';
+			display: block;
+			background-image: url('../images/icon-quote.png');
+			background-size: contain;
+			width: 32.8px;
+			height: 28.7px;
+			margin-bottom: 15px;
+		}
+
+		&::after{
+			content: '';
+			display: block;
+			background-image: url('../images/icon-quote.png');
+			background-size: contain;
+			width: 25px;
+  			height: 21.9px;
+			margin-top: 0px;
+			margin-left: auto;
+			transform: scale(-1);
+		}
+	}
+
+	cite{
+		font-size: 14px;
+		font-style: normal;
+		margin-top: 31px;
+		strong{
+			font-size: 16px;
+		}
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.section-j .img-wrap{
+		height: 443px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+}
+

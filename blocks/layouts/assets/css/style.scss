@@ -1,0 +1,41 @@
+// @import "bootstrap.min.css";
+@import "../scss/__mixins";
+@import "../scss/__media-queries";
+@import "../scss/__colors";
+@import "../scss/__fonts";
+@import "../scss/_accordion";
+@import "../scss/text-media";
+@import "../scss/_sponsors-views";
+@import "../scss/_block-content-bg";
+@import "../scss/_social-networks";
+
+@import "../scss/team-layouts/_team-vCarousel";
+@import "../scss/team-layouts/_team-vGrid";
+@import "../scss/team-layouts/_team-vList";
+@import "../scss/team-layouts/_team-vGrid_sm";
+@import "../scss/team-layouts/_team-vCarousel-bgc";
+@import "../scss/team-layouts/_team-vGrid-circle";
+@import "../scss/team-layouts/_team-vGrid-circle_wn";
+@import "../scss/team-layouts/_team-vSide-panel";
+@import "../scss/team-layouts/_team-vPopup";
+@import "../scss/team-layouts/_single-team";
+
+
+/*START FrontPage (similar elements)-------------------------------------------*/
+
+/*END FrontPage-------------------------------------------*/
+
+/* Media queries----------------------------------*/
+
+// @include mediaqueries(1200max) {
+
+// }
+// @include mediaqueries(991max) {
+ 
+// }
+// @include mediaqueries(767max) {
+
+// }
+// @include mediaqueries(576max) {
+
+// }

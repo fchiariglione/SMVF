@@ -1,0 +1,222 @@
+.tml .tml-action-links a{
+	color: $primary !important;
+}
+.tml input, .tml textarea, .tml select{
+	background: #f0f0f0;
+	border-radius: 0;
+	border: 1px solid #f0f0f0;
+	box-shadow: none;
+	color: #2d1a09;
+	min-height: 50px;
+	padding: 3px 10px !important;
+}
+#loginform, .pmpro_form{
+	.tml-submit-wrap{
+		input[type="submit"]{
+			background-color: #182955;
+			border-radius: 7px;
+			border: none;
+			box-shadow: none;
+			color: white !important;
+			display: inline-block;
+			font-family: 'Montserrat', sans-serif !important;    
+			font-size: 16px !important;
+			font-stretch: normal !important;
+			font-style: normal !important;
+			font-weight: bold !important;
+			letter-spacing: normal !important;
+			line-height: 1 !important;
+			max-width: 100%;
+			overflow-wrap: break-word;
+			padding: 16px 28px;
+			position: relative;
+			text-align: center !important;
+			text-decoration: none !important;
+			text-transform: uppercase;
+			transition: all 0.4s ease;
+		}
+	}
+ 
+	.login-username, .login-password, .pmpro_lost_password-field, .pmpro_lost_password-field, .pmpro_lost_password-field-user_login,
+	.pmpro_member_profile_edit-field,.pmpro_member_profile_edit-field-, .first_name,
+	.pmpro_change_password-field,
+	.pmpro_checkout-field, .pmpro_checkout-field-username{
+		margin-bottom: 10px !important;
+		label{
+			@include font1;
+			font-size: 14px !important;
+			font-weight: bold !important;
+			margin: 0 !important;
+			color: $text !important;
+		}
+		input:not([type="submit"]),textarea,select{
+			@include font1;
+			background: #ffffff;
+			border-radius: 0;
+			border: 2px solid #d8d8d8;
+			box-shadow: none;
+			color: black;
+			font-size: 13px !important;
+			font-weight: bold;
+			min-height: 40px;
+			padding: 10px 15px !important;
+			&::-webkit-input-placeholder { color: rgba(58, 59, 75, 0.5); opacity:1; }
+			&::-moz-placeholder { color: rgba(58, 59, 75, 0.5); opacity:1;; } /* firefox 19+ */
+			&:-ms-input-placeholder { color: rgba(58, 59, 75, 0.5); opacity:1; } /* ie */
+			&:active,&:focus{
+				box-shadow: none;
+				border-color: $tertiary;
+				outline: none;
+				color: $tertiary;
+				&::-webkit-input-placeholder { color: $tertiary; opacity:1; }
+				&::-moz-placeholder { color: $tertiary; opacity:1;; } /* firefox 19+ */
+				&:-ms-input-placeholder { color: $tertiary; opacity:1; } /* ie */
+		
+			} 
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover, 
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus {
+				background: transparent !important;
+				color: $tertiary !important;
+				-webkit-text-fill-color: $tertiary !important;
+				transition: background-color 5000s ease-in-out 0s;
+			} 
+		}
+		select{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 9 5' style='enable-background:new 0 0 9 5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23d8d8d8;%7d %3c/style%3e%3cpath class='st0' d='M9,0.6C9,0.2,8.7,0,8.4,0H0.6C0.3,0,0,0.2,0,0.6c0,0.1,0.1,0.3,0.2,0.4l3.9,3.9c0.2,0.2,0.6,0.2,0.8,0 c0,0,0,0,0,0l3.9-3.9C8.9,0.8,9,0.7,9,0.6z'/%3e%3c/svg%3e");
+			background-repeat: no-repeat;
+			background-size: 9px  5px;
+			background-position: calc(100% - 20px) center;
+			line-height: 1.5em !important;
+			padding: 12px 10px !important;
+			transition: all 0.4s ease;
+			color: rgba(58, 59, 75, 0.5);
+			option{
+				height: 50px;
+				color: rgba(58, 59, 75, 0.5);
+			}
+			&:focus, &:active{
+				// border-color: $secondary;
+				background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 9 5' style='enable-background:new 0 0 9 5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23063087;%7d %3c/style%3e%3cpath class='st0' d='M9,0.6C9,0.2,8.7,0,8.4,0H0.6C0.3,0,0,0.2,0,0.6c0,0.1,0.1,0.3,0.2,0.4l3.9,3.9c0.2,0.2,0.6,0.2,0.8,0 c0,0,0,0,0,0l3.9-3.9C8.9,0.8,9,0.7,9,0.6z'/%3e%3c/svg%3e");
+				transition: all 0.4s ease;
+				box-shadow: none;
+				outline: none;
+				// color: $secondary;
+			}
+		}
+		textarea{
+			height: 100px;
+			resize:none;
+			max-width: 100%;
+		}
+	} 
+
+	.login-remember{
+		label{
+			@include font1;
+			font-size: 14px !important;
+			font-weight: bold !important;
+			margin: 0 !important;
+			color: $text !important;
+		}
+	}
+	
+	.login-submit, .pmpro_submit{
+		display: inline-block;
+		margin: 0 !important;
+		position: relative;
+		padding: 0 !important;
+		width: auto !important;
+		margin-top: 30px !important;
+		&::after{
+			content: "";
+			background-image: url('../images/icons/chevron-black-right.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			@include center(-50%,-50%);
+			display: inline-block;
+			height: 11px;
+			margin-left: 0;
+			position: absolute;
+			right: 10px;
+			left: unset;
+			top: 50%;
+			width: 8px;
+			z-index: 9;
+			display: none;
+		}
+		#wp-submit, input[type="submit"], .pmpro_btn, .pmpro_btn-cancel{
+			background-color: $secondary;
+			border-radius: 50px;
+			border: 2px solid $secondary !important;
+			color: white !important;
+			cursor: pointer;
+			display: inline-block;     
+			@include font1;
+			font-size: 14px !important;
+			font-stretch: normal!important;
+			font-style: normal!important;
+			font-weight: bold !important;
+			letter-spacing: normal !important;
+			line-height: 1.39!important;
+			margin: 0 15px 15px 0 !important; 
+			max-width: 100%;
+			min-width: 116px;   
+			opacity: 1;
+			padding: 14px 41px!important;
+			position: relative;
+			text-align: center !important;
+			text-decoration: none !important;    
+			text-transform: none;
+			transition: all 0.4s ease;
+			&:hover,&:focus,&:active{
+				background-color: #a2a2a2 !important;
+				border-color: #a2a2a2!important;
+				color: white !important;
+				text-decoration: none;      
+			}
+		}
+	}
+}
+
+.pmpro_btn, .pmpro_btn:link, .pmpro_content_message a, .pmpro_content_message a:link{
+	background-color: $secondary;
+	border-radius: 50px;
+	border: 2px solid $secondary !important;
+	color: white !important;
+	cursor: pointer;
+	display: inline-block;     
+	@include font1;
+	font-size: 14px !important;
+	font-stretch: normal!important;
+	font-style: normal!important;
+	font-weight: bold !important;
+	letter-spacing: normal !important;
+	line-height: 1.39!important;
+	margin: 0 !important; 
+	max-width: 100%;
+	min-width: 116px;   
+	opacity: 1;
+	padding: 14px 41px!important;
+	position: relative;
+	text-align: center !important;
+	text-decoration: none !important;    
+	text-transform: none;
+	transition: all 0.4s ease;
+	&:hover,&:focus,&:active{
+		background-color: #a2a2a2 !important;
+		border-color: #a2a2a2!important;
+		color: white !important;
+		text-decoration: none;      
+	}
+}
+

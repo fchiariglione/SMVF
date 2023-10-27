@@ -1,0 +1,145 @@
+/*Team Grid circle view (template: team - class="team-vGrid-circle")*/
+.team-vGrid-circle_wn{
+  .single-member{
+    .featured-member-images{
+      background-color: $primary-dark;
+      background-size: cover;
+      border-radius: 50%;
+      border: 4px solid $primary-dark;
+      box-shadow: none; 
+      display: block;
+      margin-bottom: 30px;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.4s ease;
+      padding-top: 100%;
+      //width: 260px; height: 260px;
+      z-index: 0;
+      img{
+        @include center(-50%,-50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;  
+        height: 100%;
+        object-fit: cover;
+      }
+      .hover-box{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: all 0.4s ease;
+        .btn-2{
+          &::after{
+            content: none !important;
+          }
+        }
+        .read-more-hover{
+          font-size: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 5;
+          i{
+            display: none;
+          }
+        }
+        &::after{
+          content: "";
+          background: rgba(0,0,0,0.7);
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          transition: all 0.4s ease;
+          z-index: 1;
+        }         
+        .name-member{
+          @include center(-50%, -9%);
+          color: white;
+          display: inline-block;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 1em;
+          opacity:0;
+          position: absolute;
+          text-align: center;
+          text-decoration: none;
+          text-transform: none;
+          top: 50%; left: 50%;
+          z-index: 2;
+          width: calc(100% - 15px);
+          h3, h3 a{
+            color: #ffffff;
+            font-size: 15px;
+            line-height: 1.28;
+            margin: 0 0 5px 0 !important;
+            padding: 0 !important;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+          }                     
+          .position-member{
+            color: #ffffff;
+            @include font1;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 1.33;
+          }        
+        }
+        
+        .social-networks{
+          display: flex;
+          justify-content: center;
+          list-style-type: none;
+          padding-left: 0;
+          bottom: 15px;
+          left: 0;
+          margin: 0 auto;
+          opacity: 0;
+          position: absolute;
+          right: 0;
+          text-align: center;
+          transition: all 0.4s ease;
+          width: 65%;
+          z-index: 10;
+
+          a, li, li a{
+            width: 30px !important; height: 30px !important;
+            margin: 0 5px 5px 0 !important;
+          }
+        }
+        &:hover{
+          &::after, .name-member, .social-networks{
+            opacity: 1;
+            color: inherit;
+            border-color: inherit;
+            cursor: pointer;
+          } 
+        }
+      }
+    }
+  }
+}
+
+@include mediaqueries(1200max) {
+
+}
+@include mediaqueries(991max) {
+  
+} 
+@include mediaqueries(767max) {
+  .team-vGrid-circle_wn .single-member .featured-member-images{
+    margin: 15px auto;
+  }
+}
+@include mediaqueries(480max) {
+  
+}

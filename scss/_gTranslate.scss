@@ -1,0 +1,45 @@
+.switcher{
+  div.selected{
+    border-radius: 49.5px;
+    border: solid 1.5px $grey;
+    background: #ffffff !important;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    a{
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $primary-dark !important;
+      background: white !important;
+      width: auto !important;
+      border: none !important;
+    }
+  }
+  .option{
+    border: none !important;
+    text-align: center;
+    background: #f0f1f5 !important;
+    bottom: 100% !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    a{
+      color: $primary-dark !important;
+      padding: 7px;
+      margin: 10px 0;
+      border-radius: 50px;
+      width: 70%;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      &:hover{
+        background: transparentize($primary-dark, .9) !important;
+      }
+    }
+    a.selected{
+      background: transparentize(black, .9) !important;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.container-paginator {
+  background-color: transparent;
+  margin: 0 auto 0px;
+  max-width: 100%;
+  padding: 10px 0px;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.pagination,
+.navigation {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 30px auto 20px;
+  position: relative;
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  //justify-content: center;
+  .page-numbers.next,
+  .page-numbers.prev {}
+
+  .page-numbers.current,
+  .current {
+    position: relative;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      background-color: $primary-dark;
+      border-radius: 0%;
+      height: 2px;
+      left: calc(50% - 5px);
+      position: absolute;
+      bottom: -9px;
+      width: 10px;
+      z-index: -1;
+    }
+  }
+
+  .next {
+    margin-left: auto !important;
+  }
+
+  .prev {
+    margin-right: auto !important;
+  }
+
+  .next,
+  .prev {
+    @include font1;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    line-height: 1.64 !important;
+    letter-spacing: 0.03em !important;
+    color: $text !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+
+    background-color: transparent;
+    border-radius: 60px !important;
+    border: none;
+    box-shadow: none;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    padding: 0;
+    position: relative;
+    transition: all 0s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $primary-dark !important;
+      text-decoration: none !important;
+
+      &::after {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12.001' height='9' viewBox='0 0 12.001 9'%3e%3cpath stroke='%2376297d' stroke-miterlimit='10' d='M11 4a.536.536 0 0 0-.1-.276L7.843.145a.39.39 0 0 0-.578-.034.422.422 0 0 0-.034.589L9.7 3.579H.407a.421.421 0 0 0 0 .842H9.7L7.231 7.3a.417.417 0 0 0 .053.591.374.374 0 0 0 .558-.038L10.9 4.276A.422.422 0 0 0 11 4z' transform='translate(.5 .5)'/%3e%3c/svg%3e ");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: relative;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='12.001' height='9' viewBox='0 0 12.001 9'%3e%3cpath stroke='%23000' stroke-miterlimit='10' d='M11 4a.536.536 0 0 0-.1-.276L7.843.145a.39.39 0 0 0-.578-.034.422.422 0 0 0-.034.589L9.7 3.579H.407a.421.421 0 0 0 0 .842H9.7L7.231 7.3a.417.417 0 0 0 .053.591.374.374 0 0 0 .558-.038L10.9 4.276A.422.422 0 0 0 11 4z' transform='translate(.5 .5)'/%3e%3c/svg%3e ");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 6px;
+      width: 11px;
+      height: 8px;
+    }
+  }
+
+  ol {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 0 !important;
+      margin: 10px !important;
+
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+
+  .navigation,
+  .pagination,
+  .page-numbers,
+  .pagination.current,
+  .nav-links>a,
+  .page {
+    @include font1;
+    background: transparent;
+    border: none !important;
+    color: $text;
+    display: inline-block;
+    font-size: 11px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.64;
+    margin: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      text-decoration: none;
+      border-color: $primary-dark;
+    }
+
+    &.current {
+      color: $primary-dark;
+    }
+  }
+}
+
+@include mediaqueries(1200max) {}
+
+@include mediaqueries(991max) {
+  .pagination {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@include mediaqueries(767max) {
+  .pagination {
+    padding: 0 10px !important;
+  }
+}
+
+@include mediaqueries(576max) {}

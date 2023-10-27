@@ -1,0 +1,291 @@
+//Variables ColorS
+
+$primary: #23418A ; //used
+$primary-dark: #16254B; //used
+$primary-light: #AADFD9; //used
+$secondary: #E64F0F; //used
+// $secondary-dark: #651AE6;
+$secondary-light: #FFA463; //used
+$tertiary: #508574; //used
+// $tertiary-light: #f8cdcc;
+$quaternary: #508574;
+// $quaternary-light: #cad369;
+// $quaternary-dark: #4a8d69;
+
+$grey-bg: rgba(22, 37, 75, 0.05);
+
+$grey-light: #FAF9F9;
+$grey-dark: #888;
+$grey: #d4d2d2;
+
+$white: #ffffff;
+$black: #000000;
+
+// $primary-light: lighten($primary, 5%);
+// $primary-dark: darken($primary, 10%);
+
+// $secondary-light: lighten($secondary, 5%);
+$secondary-dark: darken($secondary, 10%);
+
+$tertiary-light: lighten($tertiary, 5%);
+$tertiary-dark: darken($tertiary, 10%);
+
+$quaternary-light: lighten($quaternary, 5%);
+$quaternary-dark: darken($quaternary, 10%);
+
+// $grey-light: lighten($grey, 5%);
+// $grey-dark: darken($grey, 10%);
+
+$text: #16254B;
+$text-dark: #1a1a1a;
+$light-text: #ffffff;
+$strong: #000000;
+
+$link: $secondary;
+$linkDark: darken($link, 20%);
+
+$selector_color: $primary;
+
+.has-text-color {
+  color: $text !important;
+}
+
+.has-primary-color {
+  color: $primary !important;
+}
+
+.has-primary-background-color {
+  background: $primary !important;
+}
+.has-primarylight-color {
+  color: $primary-light !important;
+}
+
+.has-primarylight-background-color {
+  background: $primary-light !important;
+}
+.has-primarydark-color {
+  color: $primary-dark !important;
+}
+
+.has-primarydark-background-color {
+  background: $primary-dark !important;
+}
+.has-secondary-color {
+  color: $secondary !important;
+}
+
+// .has-secondary-background-color {
+//   background: $secondary !important;
+// }
+// .has-secondarylight-color {
+//   color: $secondary-light !important;
+// }
+
+// .has-secondarylight-background-color {
+//   background: $secondary-light !important;
+// }
+// .has-secondarydark-color {
+//   color: $secondary-dark !important;
+// }
+
+// .has-secondarydark-background-color {
+//   background: $secondary-dark !important;
+// }
+
+// .has-tertiary-color {
+//   color: $tertiary !important;
+// }
+
+// .has-tertiary-background-color {
+//   background: $tertiary !important;
+// }
+
+// .has-tertiarylight-color {
+//   color: $tertiary-light !important;
+// }
+
+// .has-tertiarylight-background-color {
+//   background: $tertiary-light !important;
+// }
+
+// .has-tertiarydark-color {
+//   color: $tertiary-dark !important;
+// }
+
+// .has-tertiarydark-background-color {
+//   background: $tertiary-dark !important;
+// }
+
+// .has-quaternary-color {
+//   color: $quaternary !important;
+// }
+
+// .has-quaternary-background-color {
+//   background: $quaternary !important;
+// }
+
+// .has-quaternarylight-color {
+//   color: $quaternary-light !important;
+// }
+
+// .has-quaternarylight-background-color {
+//   background: $quaternary-light !important;
+// }
+// .has-quaternarydark-color {
+//   color: $quaternary-dark !important;
+// }
+
+// .has-quaternarydark-background-color {
+//   background: $quaternary-dark !important;
+// }
+
+// .has-grey-color {
+//   color: $grey !important;
+// }
+
+.has-grey-background-color {
+  background: $grey-bg !important;
+}
+
+// .has-graydark-color {
+//   color: $grey-dark !important;
+// }
+
+// .has-graydark-background-color {
+//   background: $grey-dark !important;
+// }
+
+// .has-graylight-color {
+//   color: $grey-light !important;
+// }
+
+// .has-graylight-background-color {
+//   background: $grey-light !important;
+// }
+
+.has-white-color {
+  color: white !important;
+}
+
+.has-white-background-color {
+  background: white !important;
+}
+
+.has-black-color {
+  color: black !important;
+}
+
+.has-black-background-color {
+  background: black !important;
+}
+
+$neutralDarker: #000000;
+$neutrayDark: #000000;
+$neutral: #3d3d3d;
+$neutralLight: #67686a;
+$neutralLighter: #abacad;
+$neutralLightest: #f2f2f2;
+
+/*used Colors*/
+
+/*used Colors*/
+
+/*Others Colors*/
+$red: #990000;
+$grey: #d8d8d8;
+$yellow: #ffa900;
+$pink: #fd5d5d;
+$blue: #007bc1;
+$brown: #ad9776;
+$purple: #69089f;
+
+@mixin gradientshadowHor {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+@mixin gradientshadowVer {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+@mixin gradientBanner {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+
+@mixin gradientSlider {
+  opacity: 0.3;
+  background-image: -webkit-linear-gradient(
+    89deg,
+    var(--black),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: -o-linear-gradient(89deg, var(--black), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(179deg, var(--black), rgba(0, 0, 0, 0));
+}
+@mixin gradientOrange {
+  background: rgb(243, 200, 101);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(243, 200, 101, 1) 0%,
+    rgba(245, 140, 60, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(243, 200, 101, 1) 0%,
+    rgba(245, 140, 60, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(243, 200, 101, 1) 0%,
+    rgba(245, 140, 60, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3c865",endColorstr="#f58c3c",GradientType=1);
+}

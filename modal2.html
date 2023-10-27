@@ -1,0 +1,356 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/rjf0jzz.css">
+  </head>
+
+  <body>
+
+    <!-- Custom Toggle Modals -->
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle1" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel1">Relative</h4>
+              <img src="images/relative-icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Storing firearms with a trusted person is a convenient, free option in many states. <a href="">NY
+                    State law</a> makes
+                  this option highly problematic in that transfers even among family members require a <a
+                    href="">Background Check</a>
+                  to obtain or alter a handgun permit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                href="">Police/sheriff’s office </a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" href="">Storage
+                facility</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle2" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel2">Storage facility</h4>
+              <img src="images/storage-facility_icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Many self-storage facilities allow gun storage. Typically the smallest unit is 5’ by 5’, but a few
+                  offer drawers, which are the least expensive. Prices typically involve an initial fee and rental costs
+                  start at $20-$75+/month depending on unit size. Store guns locked and unloaded.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal" href="">Relative
+              </a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" href="">Gun shops
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle3" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel3">Gun shops</h4>
+              <img src="images/gun-shop_icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Some gun shops offer storage services, many don’t, and a few specialize in this service (e.g. provide
+                  pick up services, offer discounts for longer-term and multiple-gun storage). Depending on how the guns
+                  are stored, the owner may need to undergo a background check to retrieve the guns.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" href="">Storage
+                facility</a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" href="">gun ranges
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle4" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel4">gun ranges</h4>
+              <img src="images/gun-ranges_icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Shooting ranges and sportsmen clubs may offer locker rentals for a relatively low monthly rate.
+                  Typically, only the owner holds the key.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" href="">Gun
+                shops</a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" href="">pawn shops
+                (outside NYC only)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle5" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel5">pawn shops (outside NYC only) </h4>
+              <img src="images/pawn-shops_icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Pawning guns for a very small loan amount is another storage option. Monthly interest on loans
+                  typically runs 15-20% or so. If the owner pawns their guns for a $100 loan, when they reclaim the guns
+                  they must pay back the $100 plus $15-$20 per month interest and go through a background check.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" href="">gun
+                ranges</a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                href="">Police/sheriff’s office</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal custom-modal-popup" id="exampleModalToggle6" aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content custom-modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-toggle-content">
+              <h4 class="modal-title" id="exampleModalToggleLabel6">Police/sheriff’s office </h4>
+              <img src="images/police_icon.png" alt="...">
+              <div class="modal-text">
+                <p>
+                  Some police departments will temporarily store firearms free of charge for safekeeping if there is a
+                  suicide concern. Check with them first for information. If they do, ask for specific instructions on
+                  how to drop off or whether they'll pick up and what will be involved to get the guns back.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="btn-container">
+              <a class="btn-modal prev" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal" href="">gun
+                ranges</a>
+              <a class="btn-modal next" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal"
+                href="">Police/sheriff’s office</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boxes -->
+
+    <div class="custom-modal-toggle custom-block alignfull padding-top-30 padding-bottom-30">
+      <div class="container">
+        <div class="row">
+          <div class="custom-modal-toggle-tile">
+            <h3>Away From Home</h3>
+          </div>
+          <div class="custom-modal-toggle-text">
+            <p>Store Guns Away from Home Until Things Improve</p>
+          </div>
+        </div>
+        <div class="row rox-boxes">
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-1" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">
+              <div class="icon-wrapper">
+                <img src="images/relative-icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>Relative</p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Storing firearms with a trusted person is a convenient, free option in many states. <a href="">NY
+                      State law</a> makes
+                    this option highly problematic in that transfers even among family members require a <a
+                      href="">Background Check</a>
+                    to obtain or alter a handgun permit.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-2" data-bs-toggle="modal" href="#exampleModalToggle2" role="button">
+              <div class="icon-wrapper">
+                <img src="images/storage-facility_icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>Storage facility</p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Many self-storage facilities allow gun storage. Typically the smallest unit is 5’ by 5’, but a few
+                    offer drawers, which are the least expensive. Prices typically involve an initial fee and rental
+                    costs start at $20-$75+/month depending on unit size. Store guns locked and unloaded.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-3" data-bs-toggle="modal" href="#exampleModalToggle3" role="button">
+              <div class="icon-wrapper">
+                <img src="images/gun-shop_icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>Gun shops</p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Some gun shops offer storage services, many don’t, and a few specialize in this service (e.g.
+                    provide pick up services, offer discounts for longer-term and multiple-gun storage). Depending on
+                    how the guns are stored, the owner may need to undergo a background check to retrieve the guns.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-4" data-bs-toggle="modal" href="#exampleModalToggle4" role="button">
+              <div class="icon-wrapper">
+                <img src="images/gun-ranges_icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>gun ranges</p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Shooting ranges and sportsmen clubs may offer locker rentals for a relatively low monthly rate.
+                    Typically, only the owner holds the key.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-5" data-bs-toggle="modal" href="#exampleModalToggle5" role="button">
+              <div class="icon-wrapper">
+                <img src="images/pawn-shops_icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>pawn shops <span>(outside NYC only)</span></p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Pawning guns for a very small loan amount is another storage option. Monthly interest on loans
+                    typically runs 15-20% or so. If the owner pawns their guns for a $100 loan, when they reclaim the
+                    guns they must pay back the $100 plus $15-$20 per month interest and go through a background check.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-box box-6" data-bs-toggle="modal" href="#exampleModalToggle6" role="button">
+              <div class="icon-wrapper">
+                <img src="images/police_icon.png" alt="">
+              </div>
+              <div class="box-content">
+                <div class="box-title">
+                  <p>Police/sheriff’s office </p>
+                </div>
+                <div class="box-text">
+                  <p>
+                    Some police departments will temporarily store firearms free of charge for safekeeping if there is a
+                    suicide concern. Check with them first for information. If they do, ask for specific instructions on
+                    how to drop off or whether they'll pick up and what will be involved to get the guns back.
+                  </p>
+                </div>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,54 @@
+.block-content{
+  padding: 80px 0;
+  @media(max-width: 1200px) {
+    padding: 50px 15px;
+  }
+  /*background setting color*/
+  &.has-bg-color{
+    background-color: initial;
+  }
+  &.not-bg-color{
+    background-color: transparent;
+  }
+  &.bg-green{
+    background-color: $green;
+    p,span,strong,a,h2,h3,h4,h5{
+      color: $white;
+    }
+  }
+  &.bg-orange{
+    background-color: $orange;
+    p,span,strong,a,h2,h3,h4,h5{
+      color: $white;
+    }
+  }
+  
+  /*alignment content setting*/
+  &.text-center{
+    text-align: center;
+    position: relative;
+  }
+  &.text-left{
+    text-align: left;
+    position: relative;
+  }
+  &.text-right{
+    text-align: right;
+  }
+  &.has-text-color{
+    &.green{
+      color: $green;
+    }
+    &.orange{
+      color: $orange;
+    }
+    &.white{
+      color: $white;
+    }
+  } 
+  &.color-neutral{
+    p,span,strong,a,h2,h3,h4,h5{
+      color: $neutral !important;
+    }
+  }
+}

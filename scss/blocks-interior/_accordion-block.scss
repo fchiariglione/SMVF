@@ -1,0 +1,140 @@
+.elevation-accordion	{
+	width: 75%;
+	.card{
+		border-radius: 0 !important;
+		border: solid 1px #cacaca;
+		box-shadow: none;
+		margin-bottom: 20px!important;
+		padding: 0;
+		&.active-collapse{
+			box-shadow: 3px 1px 7px 2px rgba(0, 0, 0, 0.1);
+		}
+		.card-header{
+			background-color: transparent;
+			border-bottom: none !important;
+			border-color: #cacaca;
+			border-radius: 0 !important;
+			margin: 0 !important;
+			position: relative;
+			padding-right: 40px;
+			h2, h3, h4, h6{
+				font-family: 'Montserrat', sans-serif !important;
+				background: transparent;
+				border-radius: 0;
+				color: unset;
+				font-size: 18px !important;
+				font-stretch: normal;
+				font-style: normal;
+				font-weight: bold;
+				letter-spacing: normal;
+				line-height: 1.2;
+				margin-bottom: 0 !important;
+				.btn, .btn-link{
+					background: transparent;
+					border-radius: 0;
+					color: #17222c;
+					display: block;
+					font-size: inherit;
+					font-stretch: normal;
+					font-style: normal;
+					font-weight: bold;
+					letter-spacing: normal;
+					line-height: 1.21;
+					margin: 0 !important;
+					padding: 0;
+					position: relative;
+					text-align: left;
+					width: 100%;
+					&[aria-expanded^="true"]{
+						color: $primary;
+						&::before{
+							background-image: url('../images/icons/chevron-up-yellow.svg');
+						}
+					}
+					&[aria-expanded^="false"]{
+						color: $text;
+						&::before{
+							background-image: url('../images/icons/chevron-down-blue.svg');
+						}
+					}
+					&::before{
+						content: "" !important;
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+						background-size: 10px 6px;
+						cursor: pointer;
+						display: inline-block;
+						height: 100%;
+						position: absolute;
+						right: 0;
+						top: 0 !important;
+						width: 30px;
+					}
+					&.collapsed{
+					 
+					}
+					&:hover, &:focus, &:active{
+						text-decoration: none;
+					}
+				}
+			}
+		} /*.card.header*/
+		.card-body{
+			background-color: #ffffff;
+			padding: 20px 40px 20px 20px;
+			h2,h3,h4,h5,h6{
+				color: $yellow;
+				font-size: 19px;
+				font-weight: bold;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: 1.21;
+				letter-spacing: normal;
+			}
+			p,strong,em,span,a{
+				@include font1;
+				color: rgba($color: $text, $alpha: 0.74);        
+				font-size: 15px;
+				font-stretch: normal;
+				font-style: normal;
+				font-weight: normal;
+				letter-spacing: -0.08px;
+				letter-spacing: normal;
+				line-height: 1.47;
+				text-align: left;
+			}
+		}
+		.collapse {
+		}
+	}
+	@media(max-width:1200){
+		width: 100%;
+	}
+}
+@include mediaqueries(1200max) {
+	.elevation-accordion	{
+		width: 100%;
+		.card{
+			.card-header h2 {
+				// font-size: 25px !important;
+				.btn{
+					word-break: break-word;
+					white-space: normal;
+					overflow-wrap: break-word;
+					&::before{
+						right: -35px;
+					}
+				}
+			}
+		}
+	}
+}
+@include mediaqueries(767max) {
+ 
+}
+@include mediaqueries(480max) {
+ 
+}
+@include mediaqueries(320max) {
+
+}

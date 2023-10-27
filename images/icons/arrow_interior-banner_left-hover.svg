@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.937" height="52.936" viewBox="0 0 52.937 52.936">
+    <defs>
+        <style>
+            .cls-1{fill:#fed141}
+        </style>
+    </defs>
+    <g id="download" transform="rotate(90 26.468 26.469)">
+        <path id="Path_102" d="M42.349 21.175A21.174 21.174 0 1 1 21.174 0a21.175 21.175 0 0 1 21.175 21.175zm0 0" class="cls-1" data-name="Path 102" transform="translate(5.294 5.294)"/>
+        <path id="Path_103" d="M26.468 52.937a26.468 26.468 0 1 1 26.468-26.469 26.468 26.468 0 0 1-26.468 26.469zm0-51.172a24.7 24.7 0 1 0 24.7 24.7 24.7 24.7 0 0 0-24.7-24.7zm0 0" class="cls-1" data-name="Path 103"/>
+        <g id="Group_98" data-name="Group 98" transform="translate(14.999 13.234)">
+            <path id="Path_104" d="M.882 26.468A.882.882 0 0 1 0 25.586V.882a.882.882 0 1 1 1.765 0v24.7a.882.882 0 0 1-.883.886zm0 0" data-name="Path 104" transform="translate(10.587)"/>
+            <path id="Path_105" d="M.884 10.588a.882.882 0 0 1-.567-1.56L10.9.2a.883.883 0 1 1 1.136 1.36L1.448 10.383a.882.882 0 0 1-.564.205zm0 0" data-name="Path 105" transform="translate(10.585 15.881)"/>
+            <path id="Path_106" d="M11.469 10.588a.882.882 0 0 1-.565-.2L.317 1.56A.883.883 0 1 1 1.448.2l10.587 8.828a.882.882 0 0 1-.566 1.56zm0 0" data-name="Path 106" transform="translate(0 15.881)"/>
+        </g>
+    </g>
+</svg>

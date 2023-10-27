@@ -1,0 +1,37 @@
+.section-ads{
+	.single-box{
+
+		.img-wrap{
+			margin: 0;
+		}
+		.rectangle-ads{
+			height: 163px;
+			img{
+				object-fit: contain;
+			}
+		}
+
+		.square-ads{
+			height: 303px;
+			img{
+				object-fit: contain;
+			}
+		}
+	}
+}
+
+@include mediaqueries(1200max) {
+  
+}
+@include mediaqueries(991max) {
+}
+@include mediaqueries(767max) { 
+}
+@include mediaqueries(576max) { 
+  
+}
+
+
+				
+
+

@@ -1,0 +1,168 @@
+/*Team Carousel view (template: Team - class="team-vCarousel")*/
+.team-vCarousel-bgc{
+  #carousel__team-bgc{
+    .carousel-inner{
+      margin: 0 auto;      
+      width: 85%;
+    }
+    .carousel-control-next, .carousel-control-prev{
+      width: 7%;
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-image: url('../images/icons/arrow-rounded-blue.png');
+        background-color: transparent;
+        background-size: 41px 41px;
+        border-radius: 50%;
+        height: 41px;
+        width: 41px;
+      }
+      .carousel-control-next-icon{
+        @include rotate(180deg);
+      }
+    }
+    .row{
+      margin: 0 !important;
+    }
+    .single-member{
+      background-color: $primary;
+      display: inline-block;
+      padding: 0;
+      margin: 0 5px 30px;
+      &.col-lg-4{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33.333333% - 10px);
+        flex: 0 0 calc(33.333333% - 10px);
+        max-width: calc(33.333333% - 10px);
+      }
+      &.col-lg-6{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33.333333% - 10px);
+        flex: 0 0 calc(33.333333% - 10px);
+        max-width: calc(33.333333% - 10px);
+      }
+      //max-width: 216px;
+      .featured-member-images{
+        background-size: cover;
+        box-shadow: none; 
+        display: block;
+        margin-bottom: 30px;
+        overflow: hidden;
+        padding-bottom: 85%;
+        position: relative;
+        transition: all 0.4s ease;
+        z-index: 0;
+        img{
+          @include center(-50%,-50%);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;  
+          height: 100%;
+          object-fit: cover;
+        }
+        &::after{
+          content:none;
+        }
+        a.hover-link-plus{
+          @include rotate(-38deg);
+          background: $primary;
+          bottom: -20px; right: -35px;  
+          color: white;
+          position: absolute;
+          text-decoration: none;
+          transition: all 0.2s ease;
+          width: 0; height: 0;
+          z-index: 2;
+          &::before{
+            content: "\f35d";
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            /*--adjust as necessary--*/
+            @include rotate(38deg);
+            font-size: 18px;
+            right: 35px;
+            top: 5px;
+            position: absolute;            
+          }
+          i{
+            display: none;
+          }
+        }
+        &:hover{
+          &::after{
+            opacity: 1;
+          }
+          a.hover-link-plus{
+            width: 100px;
+            height: 50px;
+          }
+        }
+      }//.featured-member-images
+      .body-member{
+        padding: 0 25px 20px;
+        .name-member{
+          position: relative;
+          padding: 0 0 20px;
+          margin-bottom: 20px;
+          h3{
+            color: #ffffff;
+            font-size: 23px;
+            line-height: 1.1em;
+            margin: 0 0 5px !important;
+            padding: 0 !important;
+            position: relative;
+            text-align: left;
+            text-transform: none;
+          }
+          .position-member{
+            @include font1;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1em;
+            text-align: left;
+          }
+          &::after {
+            content: '';
+            background: #00d682;
+            border-radius: 30px;
+            bottom: 0;
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            width: 40px;
+          }
+        }
+        .content-member, p{
+          line-height: 1.4em;
+          color: #ffffff;
+          font-size: 15px;        
+        }
+        .social-networks a, .social-networks li, .social-networks li a{
+          background-color: #ffffff;
+          color: $primary;
+        }
+      }
+    }//.single-member
+  } // #carousel__team
+}
+
+@include mediaqueries(1200max) {
+
+}
+@include mediaqueries(991max) {
+  
+} 
+@include mediaqueries(767max) {
+  .team-vCarousel-bgc #carousel__team-bgc .carousel-control-next, .team-vCarousel-bgc #carousel__team-bgc .carousel-control-prev {
+    width: 15%;
+  }
+}
+@include mediaqueries(480max) {
+  
+}

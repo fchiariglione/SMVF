@@ -1,0 +1,67 @@
+.section-g {
+  padding: 75px 0 95px;
+  .uppertitle{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+    img{
+      object-fit: contain;
+      object-position: bottom left;
+      width: 21px;
+      height: 19px;
+      display: inline-block;
+    }
+    span{
+      @include font1;
+      margin-left: 24px;
+      display: inline;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: $text;
+    }
+  }
+  .partner-title{
+    padding-left: 44px !important;
+    margin-bottom: 54px !important;
+    max-width: 400px;
+  }
+
+
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+// }
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+
+// }
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+
+// }
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+
+// }
+
+// @media (min-width: 1366px) {
+// }
+
+// @media (min-width: 1440px) {
+// }
+// @media (min-width: 1680px) {
+// }
+
+// @media (min-width: 1920px) {
+// }
+
+// @media (min-width: 2303px) {
+// }
+
+// @media (min-width: 2560px) {
+// }

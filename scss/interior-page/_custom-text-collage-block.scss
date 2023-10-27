@@ -1,0 +1,83 @@
+.custom-text-collage-block{
+	position: relative;
+	&.not-colored-block{
+		h2, h3, h4{
+			color: $secondary-dark;
+		}
+		p{
+			color: $text;
+		}
+		li{
+			color: $text;
+			span{
+				color: $secondary-dark !important;
+			}
+			&::after{
+				background: $secondary-dark !important;
+			}
+		}
+	}
+	.list li{
+		@media (min-width: 1200px){
+			margin-bottom: 16px !important;
+		}
+	}
+	.link{
+		margin-top: 37px;
+		display: block;
+	}
+	.row{
+		row-gap: 30px;
+	}
+	.image-collage-container{
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		gap: 30px;
+		align-items: top;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		align-items: center;
+		@media (min-width: 1200px){
+			justify-content: end;
+			align-items: start;
+		}
+		.img-item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&.full{
+				flex: 1 0 auto !important;
+				width: 100%;
+
+			}
+			&.large{
+				flex: 1 1 280px !important;
+			}
+			flex: 1 1 200px;
+			img{
+				object-fit: contain;
+				object-position: center;
+				width: 100%;
+				height: 100%;
+			}
+			@media (min-width: 768px){
+				justify-content: end;
+				&.full{
+					flex: 0 0 auto;
+					img{
+						object-fit: contain;
+						object-position: center;
+						width: auto;
+						height: auto;
+					}
+	
+				}
+				&.large{
+					flex: 1 0 350px !important;
+				}
+				flex: 1 1 250px;
+			}
+		}
+	}
+}

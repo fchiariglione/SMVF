@@ -1,0 +1,149 @@
+.single-our_team{
+	padding: 50px 0 100px;
+	.left-col{
+    .list-team_member > ul > li{
+      margin-bottom: 15px;
+    }
+    .list-team_member{
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        li{
+      	  span.title-list{
+            color: $text;
+            cursor: pointer;
+            display: inline-block;
+            letter-spacing: .125em;
+            padding: 5px 0;
+            text-transform: uppercase;
+          }   
+          ul{
+          	padding-left: 10px;
+            li.item-team_member{
+              border-bottom: 1px solid $blue;
+              padding: 6px 0 10px;
+              a.team_member_link{
+		            color: $blue;
+		            text-decoration: none;
+		            margin: 0;
+		            padding: 0;
+		            &:hover{
+		              text-decoration: none;
+		              color: $primary;
+		            }
+		          }
+              &:last-of-type{
+                border: none;
+              }
+            }
+          }               
+        }
+      }
+    }
+	} /*.left-col*/
+	.center-col{
+    //padding: 0 30px;
+    .name_position-member{
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 25px;
+			padding-bottom: 20px;
+		  h1.title-member{
+	      font-size: 46px;
+	      margin: 0 0 10px 0;
+	    }
+	    p.position-member{
+	      font-size: 20px;
+	      margin: 0 0 0 0;
+	    }
+	  }
+		.social-networks{
+	    font-size: 0;
+	    line-height: 0;
+	    a, li, li a{
+	      color: #fff;
+	      display: inline-block;
+	      font-size: inherit;
+	      font-weight: inherit;
+	      margin: 0 5px 15px 0;
+	      position: relative;
+	      text-decoration: none;
+	      transition: all 0.5s ease;
+	      width: 35px; height: 35px;
+	      .fas, .fab, .fa{
+	        @include center(-50%,-50%);
+	        left: 50%; top: 50%;
+	        font-size: 16px;
+	        margin: 0 auto;
+	        position: absolute;
+	      }
+	      &:hover{
+	        //background: transparent;
+	        box-shadow: none;
+	        i{
+	          background: transparent;
+	          text-shadow: none;
+	        }
+	      }
+	    }
+     	&.green{
+	      a, li, li a{
+	        background-color: $primary;
+  	      &:hover{
+		        background-color: $blue;
+					}
+	      }
+	    }
+	    &.blue{
+	      a, li, li a{
+	        background-color: $blue;
+	        &:hover{
+		        background-color: $primary;
+					}
+	      }
+	    }
+	    &.circle {
+	      a, li, li a{
+	        border-radius: 50%;      
+	      }
+	    }
+	    &.square{
+	      a, li, li a{
+	        border-radius: 0;
+	      }
+	    }
+	  }
+	} /*.center-col*/
+	.right-col{
+		.profile-picture{
+      background-position: center;
+      background-size: cover;
+      border-bottom: 8px solid $blue;
+      margin: 0 auto 50px;
+			width: 250px; height: 250px;
+			img{
+				@include center(-50%,-50%);
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 100%;  
+				height: auto;
+			}
+    }
+	} /*.right-col*/
+}
+
+@include mediaqueries(1200max) {
+
+}
+@include mediaqueries(991max) {
+  
+} 
+@include mediaqueries(767max) {
+  .list-team_member{
+  	margin-top: 40px;
+  }
+}
+@include mediaqueries(480max) {
+  
+}

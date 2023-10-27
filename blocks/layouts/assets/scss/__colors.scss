@@ -1,0 +1,53 @@
+//Variables ColorS
+$primary:#F44F9E;  // used
+$primary-light: #FBEEF5; // used
+$primary-dark: #E01576; // used
+
+$secondary:#B191DF;  // used
+$secondary-light: #F6F4FB; //seafoam-blue
+$secondary-dark: #651AE6; // green-blue
+
+$tertiary: #fd5d5d;
+$tertiary-light: lighten($tertiary, 5%);
+$tertiary-dark: darken($tertiary, 10%);
+
+$quaternary : #77b82b; // GREEN
+$quaternary-light:lighten($quaternary, 5%);
+$quaternary-dark:darken($quaternary, 10%);
+
+$text:#1C1B21;  // used
+$light-text:#ffffff;
+$strong: #000000;
+$dark-text: #37373f;
+
+$link: #E01576;
+
+$neutralDarker: #000000;
+$neutrayDark: #000000;
+$neutral: #3d3d3d;
+$neutralLight: #67686a;
+$neutralLighter: #abacad; 
+$neutralLightest: #f2f2f2; 
+
+// /*used Colors*/
+// $primary: #ff6929; //used // dusty-orange
+// $primary-light: #faad60;// pale-orange
+// $primary-dark: #ef4627; // tomato
+
+// $primary: #5bc1a5; // greyish-teal
+// $primary-light: #6ac9c8; // tealish
+// $primary-dark: #01a881; // 
+
+$white: white;
+$green: green;
+$orange: orange;
+/*used Colors*/
+
+/*Others Colors*/
+$red: #990000; 
+$grey: #d8d8d8; 
+$yellow: #ffa900;
+$pink: #fd5d5d; 
+$blue: #007bc1;
+$brown: #ad9776; 
+$purple: #69089f; 

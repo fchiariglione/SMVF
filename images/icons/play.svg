@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65">
+  <g fill="none" fill-rule="evenodd" class="play-hover">
+    <circle cx="32.5" cy="32.5" r="32.5" fill="#FF354E" class="play-hover__oval-copy-8"/>
+    <path fill="#FFF" stroke="#FFF" stroke-width="5" d="M33.5,28.8267342 L39.0448013,40.5 L27.9551987,40.5 L33.5,28.8267342 Z" class="play-hover__triangle-copy" transform="rotate(90 33.5 33)"/>
+  </g>
+</svg>

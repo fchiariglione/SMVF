@@ -1,0 +1,80 @@
+#accordionBlock, .elevation-accordion{
+  .card{
+    &:first-child{
+      .card-header h2 .btn{
+        &::before{
+          content: "\f078";
+        }
+        
+      }
+    }
+    .card-header{
+      padding: 0 !important;
+      margin: 0 !important;
+      h2, h3, h4, h6{
+        font-size: inherit;
+        .btn{
+          color: inherit;
+          display: block;
+          font-size: inherit;
+          margin: 0 !important;
+          padding: 1.25rem 40px 1.25rem 1.25rem;
+          position: relative;
+          text-align: left;
+          width: 100%;
+          &[aria-expanded^="true"]::before{
+            content: "\f077";
+          }
+          &[aria-expanded^="false"]::before{
+            content: "\f078";
+          }
+          &::before{
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            /*--adjust as necessary--*/       
+            color: $secondary;     
+            display: inline-block;
+            font-size: 20px; 
+            line-height: 1;
+            margin-right: 10px;    
+            position: absolute;      
+            right: 0;
+            top: calc(50% - 10px);  
+          }
+          &.collapsed{
+            //background: $secondary;
+            &::before{
+              content: "\f078";
+            }
+          }
+          &:hover, &:focus, &:active{
+            text-decoration: none;
+          }
+        }
+      }
+    } /*.card.header*/
+    .collapse {
+      .card-body{
+        p, h3, h2,h4,h5,h6,a,span,strong, em{
+         
+        }
+      }
+    }
+  }
+}
+@include mediaqueries(991max) {
+  
+}
+@include mediaqueries(767max) {
+ 
+}
+@include mediaqueries(480max) {
+ 
+}
+@include mediaqueries(320max) {
+
+}

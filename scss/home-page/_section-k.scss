@@ -1,0 +1,111 @@
+.section-k{
+	padding: 48px 0;
+	position: relative;
+	
+	h2{
+		font-size: 18px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.22;
+		letter-spacing: 1.35px;
+	}
+
+	.img-wrap{
+		width: 164px;
+		height: 70px;
+		margin: 0 auto;
+		opacity: 0.60;
+		filter: grayscale(100%);
+		transition: 0.4s;
+		img{
+			object-fit: contain;
+		}
+		&:hover{
+			filter: grayscale(0%);
+			opacity: 1;
+		}
+	}
+
+	.carousel-control-next, .carousel-control-prev{
+		border-radius: 0%;
+		bottom: 50px;
+		opacity: 1;
+		position: absolute;
+		top: auto;
+		transition: all 0.4s ease;
+		width: 30px;
+  		height: 30px;
+		display:block;
+		z-index: 10;
+		.carousel-control-next-icon, .carousel-control-prev-icon{
+			position: absolute;
+			@include center(-50%,-50%);
+			left: 50%;
+			top: 50%;
+			height: 100%;
+			width: 100%;
+			background-image: url('../images/icons/arrow-swiper.svg');
+			background-size: contain;
+			-webkit-filter: brightness(0%) invert(60%);
+			filter: brightness(0%) invert(60%);
+		}
+		&:hover{
+			// -webkit-filter: brightness(50%) invert(0%);
+			// filter: brightness(0%) invert(0%);
+			.carousel-control-prev-icon,
+			.carousel-control-next-icon{
+				// background-image: url('../images/icons/arrow-btn-g.svg');
+				// background-size: contain;
+				-webkit-filter: brightness(0%) invert(0%);
+				filter: brightness(0%) invert(0%);
+			}
+		}
+	}
+
+	.carousel-control-next{
+		right: 2%;
+		left: unset;
+		transform: scaleX(-1);
+		.carousel-control-next-icon{
+		}
+	}
+	.carousel-control-prev{
+		left: 2%;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	.section-k .image-container{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.section-k .content-wrap{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 15px;
+	}
+
+	.section-k .img-wrap{
+		width: 100%;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.section-k .carousel-control-next, .section-k .carousel-control-prev{
+		bottom: 110px;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+}
+

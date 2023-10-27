@@ -1,0 +1,213 @@
+.section-h {
+	position: relative;
+	padding: 25px 0 104px;
+	@media (min-width: 768px){
+		padding: 25px 0 96px;
+	}
+	@media (min-width: 1200px){
+		padding: 93px 0 98px;
+		background-image: url('../images/gradients_background-donate-1.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	.content{
+		margin-top: 59px;
+	}
+
+	.uppertitle{
+		.heart-icon{
+			display: block;
+		}
+		span{
+			@include font1;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: 0.11em;
+			text-transform: uppercase;
+			color: $primary-dark;
+			margin-bottom: 8px;
+		}
+	}
+	.title{
+		margin-bottom: 30px;
+		.content-title, h2, h3, h4, h5{
+			text-transform: uppercase;
+			color: $primary-dark;
+		}
+	}
+
+	.donate-image{
+		position: relative;
+		width: 100%;
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -23px;
+			left: -39px;
+			width: 197px;
+			height: 34px;
+			background-image: url('../images/black-brush.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			@media (min-width: 768px){
+				width: 303px;
+				height: 54px;
+			}
+		}
+		img{
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.bottom-content{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		.btn-container{
+			margin-bottom: 26px;
+			.btn-1{
+				flex: 0 0 auto;
+				&.secondary{
+					margin-top: 12px;
+				}
+			}
+		}
+		.girl-1{
+			align-self: flex-end;
+		}
+		@media (min-width: 768px){
+			flex-direction: row;
+			flex-wrap: nowrap;
+			.btn-container{
+				margin-right: 44px;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
+		}
+	}
+
+	.row-joinus{
+		.content-joinus{
+			margin-top: 26px;
+			display: block;
+			.joinus-img{
+				width: 89px;
+				height: 146px;
+				display: block;
+				margin-bottom: 28px;
+				img{
+					object-fit: contain;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.content-joinus-bot{
+				.content-joinus-text{
+					display: flex;
+					.joinus-icon{
+						flex: 0 0 auto;
+						display: inline-block;
+						width: 21px;
+						height: 33px;
+						img{
+							object-fit: contain;
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.content-joinus-header{
+						display: flex;
+						flex-wrap: wrap;
+						flex-direction: column;
+						margin-left: 10px;
+						margin-bottom: 26px;
+						.joinus-uppertitle{
+							@include font1;
+							font-style: normal;
+							font-weight: 500;
+							font-size: 13px;
+							line-height: 18px;
+							letter-spacing: 0.11em;
+							text-transform: uppercase;
+							color: $primary;
+						}
+						.title{
+							position: relative;
+							&::after{
+								content: '';
+								display: block;
+								position: absolute;
+								top: unset;
+								bottom: 0;
+								right: 50%;
+								width: 91px;
+								height: 43px;
+								background-image: url('../images/violet-brush-2.png');
+								background-size: contain;
+								background-position: center;
+								background-repeat: no-repeat;
+								transform: translate(50%, 0);
+								@media (min-width: 424px){
+									top: -9px;
+									right: -22px;
+									bottom: unset;
+									transform: none;
+								}
+							}
+							h2, h3, h4, h5{
+								position: relative;
+								z-index: 2;
+								color: $text;
+							}
+						}
+					}
+				}
+				.btn-container{
+					flex: 0 0 auto;
+					display: inline-flex;
+					row-gap: 12px;
+					column-gap: 10px;
+					flex-wrap: wrap;
+					flex-direction: column;
+					.btn-1{
+						flex: 0 0 auto;
+					}
+				}
+			}
+
+		}
+		@media (min-width: 768px){
+			justify-content: center;
+			.content-joinus{
+				margin-top: 93px;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-end;
+	
+				.joinus-img{
+					display: inline-block;
+					margin-bottom: 0;
+				}
+
+				.content-joinus-text{
+					.content-joinus-header{
+						margin-left: 10px;
+						margin-bottom: 21px;
+					}
+				}
+				.btn-container{
+					padding-left: 17px;
+					flex-direction: row !important;
+				}
+			}
+		}
+	}
+}

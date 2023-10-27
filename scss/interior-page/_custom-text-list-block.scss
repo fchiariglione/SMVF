@@ -1,0 +1,52 @@
+.interior-page {
+  .text-list-block {
+    // background-color: $quaternary-light;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      // text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    li,
+    blockquote,
+    cite {
+      color: inherit !important;
+      a {
+        color: inherit;
+      }
+    }
+
+    .link {
+      margin-top: 30px;
+    }
+
+    ul.list,
+    ul {
+      li {
+        // padding-left: 60px !important;
+        margin-bottom: 35px !important;
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+        &::after {
+          // width: 31.8px !important;
+          // height: 2px !important;
+          // border-radius: 0 !important;
+          // top: 7px !important;
+          background: currentColor !important;
+        }
+      }
+    }
+  }
+}

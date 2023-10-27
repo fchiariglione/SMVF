@@ -1,0 +1,136 @@
+// .media_text-block{
+// 	padding: 0;
+// 	position: relative;
+// 	&.image_on_left{
+// 		.side-text{
+// 			padding-right: 0 !important;
+// 		}
+// 		.outside-container{
+// 			height: 100%;
+// 			left: calc((100vw - 1110px)/(-2));
+// 			overflow: hidden;
+// 			padding: 0;
+// 			position: absolute;
+// 			right: 0;
+// 			top: 0;
+// 			width: calc(100% + ((100vw - 1110px)/(2)));
+// 			z-index: 40;
+// 			.image-wrapping{
+// 				height: 100%;
+// 				padding-top: unset !important;
+// 			} 
+// 		}
+// 	}  
+// 	@media(max-width: 1200px){
+// 		&.image_on_left .outside-container{
+// 			left: calc((100vw - 930px)/(-2));
+// 			width: calc(100% + ((100vw - 930px)/(2)));
+// 		}
+// 	}
+// 	@media(max-width: 991px){
+// 		&.image_on_left {
+// 			.side-text{
+// 				padding: 50px 25px!important;
+// 			}
+// 			.outside-container{
+// 				margin-left: calc( -100vw / 2 + 100% / 2 ) !important;
+// 				margin-right: calc( -100vw / 2 + 100% / 2 ) !important;
+// 				max-width: 100vw;
+// 				width: 100vw;
+// 				height: 400px;
+// 				position: relative;
+// 				left: unset;
+// 			}
+// 		}
+// 	}
+// 	&.image_on_right{
+// 		flex-direction: row-reverse;
+// 		.side-text{
+// 			padding-left: 0 !important;
+// 		}
+// 		.left-side{
+// 			order: 1;
+// 		}
+// 		.outside-container{
+// 			height: 100%;
+// 			right: calc((100vw - 1110px)/(-2));
+// 			overflow: hidden;
+// 			padding: 0;
+// 			position: absolute;
+// 			left: 0;
+// 			top: 0;
+// 			width: calc(100% + ((100vw - 1110px)/(2)));
+// 			z-index: 40;
+// 			.image-wrapping{
+// 				height: 100%;
+// 				padding-top: unset !important;
+// 			} 
+// 		}
+// 	}
+// 	@media(max-width: 1200px){
+// 		&.image_on_right .outside-container{
+// 			right: calc((100vw - 930px)/(-2));
+// 			width: calc(100% + ((100vw - 930px)/(2)));
+// 		}
+// 	}
+// 	@media(max-width: 991px){
+// 		&.image_on_right {
+// 			.side-text{
+// 				padding: 50px 25px!important;
+// 				order: 1;
+// 			}
+// 			.outside-container{
+// 				margin-left: calc( -100vw / 2 + 100% / 2 ) !important;
+// 				margin-right: calc( -100vw / 2 + 100% / 2 ) !important;
+// 				max-width: 100vw;
+// 				width: 100vw;
+// 				height: 400px;
+// 				position: relative;
+// 			}
+// 		}
+// 	}
+// 	.side-text{
+// 		padding: 60px 90px;
+// 		&.text-left{
+// 			text-align: left;
+// 			.bottom-link-section{
+// 				text-align: left;
+// 			}
+// 		}
+// 		&.text-center{
+// 			text-align: center;
+// 			.bottom-link-section{
+// 				text-align: center;
+// 			}
+// 		}
+// 		&.text-right{
+// 			text-align: right;
+// 			.bottom-link-section{
+// 				text-align: right;
+// 			}
+// 		}
+// 	}
+// 	.title-block{
+// 		margin-bottom: 20px;
+// 		h3{
+// 		}
+// 	}
+// 	.content-block, p{
+// 	}
+// 	.bottom-link-section{
+		
+// 	}
+// }
+
+// @include mediaqueries(1200max) {
+
+// }
+// @include mediaqueries(991max) {
+
+// }
+// @include mediaqueries(767max) {
+ 
+// }
+// @include mediaqueries(576max) {
+ 
+// }

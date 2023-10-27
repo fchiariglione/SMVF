@@ -1,0 +1,152 @@
+/*Team Carousel view (template: Team - class="team-vCarousel")*/
+.team-vCarousel{
+  #carousel__team{
+    .carousel-inner{
+      margin: 0 auto;      
+      width: 80%;
+    }
+    .carousel-control-next, .carousel-control-prev{
+      width: 10%;
+      .carousel-control-next-icon, .carousel-control-prev-icon {
+        background-image: url('../images/icons/arrow-rounded-blue.png');
+        background-color: transparent;
+        background-size: 41px 41px;
+        border-radius: 50%;
+        height: 41px;
+        width: 41px;
+      }
+      .carousel-control-next-icon{
+        @include rotate(180deg);
+      }
+    }
+    .single-member{
+      display: inline-block;
+      padding: 30px 25px;
+      max-width: 226px;
+      .featured-member-images{
+        background-color: $primary;
+        background-size: cover;
+        box-shadow: 3px 6px 10px 2px rgba(0, 0, 0, 0.15); 
+        display: block;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+        margin-bottom: 30px;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.4s ease;
+        z-index: 0;
+        img{
+          @include center(-50%,-50%);
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 100%;  
+          height: 100%;
+          object-fit: cover;
+        }
+        &::after{
+          content: "";
+          background: rgba(0,0,0,0.7);
+          height: 100%;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          transition: all 0.4s ease;
+          z-index: 1;
+        }
+        a.hover-link-plus{
+          @include center(-50%, -50%);
+          top: -50%; left: 50%;
+          position: absolute;
+          color: white;
+          text-decoration: none;
+          transition: all 0.5s ease;
+          z-index: 2;
+          i.fa-plus-circle{
+            border-radius: 50%;
+            box-shadow: 0px 6px 22px 13px rgba(0, 0, 1, 0.15);
+            font-size: 40px;
+          }
+        }
+        &:hover{
+          &::after{
+            opacity: 1;
+          }
+          a.hover-link-plus{
+            top: 50%;
+          }
+        }
+      }//.featured-member-images
+      .body-member{
+        .name-member{
+          position: relative;
+          padding: 0 0 20px;
+          margin-bottom: 25px;
+          h3{
+            color: #00b6f4;
+            font-size: 23px;
+            line-height: 1.1em;
+            margin: 0 0 5px !important;
+            padding: 0 !important;
+            position: relative;
+            text-align: left;
+            text-transform: none;
+          }
+          .position-member{
+            @include font1;
+            color: #292929;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1em;
+            text-align: left;
+          }
+          &::after {
+            content: '';
+            background: #00d682;
+            border-radius: 30px;
+            bottom: 0;
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            width: 40px;
+          }
+        }
+        .content-member, p{
+          line-height: 1.4em;
+          color: #292929;
+          font-size: 15px;        
+        }
+      }
+    }//.single-member
+  } // #carousel__team
+}
+
+@include mediaqueries(1200max) {
+
+}
+@include mediaqueries(991max) {
+  
+} 
+@include mediaqueries(767max) {
+  .team-vCarousel #carousel__team .carousel-control-next, .team-vCarousel #carousel__team .carousel-control-prev {
+    width: 15%;
+  }
+  .team-vCarousel #carousel__team .single-member{
+    padding: 15px;
+    text-align: center;
+    .body-member .name-member {
+      &::after {
+        right: 0;
+        margin: 0 auto;  
+      }
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}
+@include mediaqueries(480max) {
+  
+}
